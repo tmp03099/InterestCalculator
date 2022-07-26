@@ -1,0 +1,78 @@
+<h1>Interest Calculator</h1>
+
+<p> Our interest calculator tool can help determine the interest rate for loan,
+    or the ammount earned at a bank or credit union from saving account.
+    To understand what is interest rate and different ways in which interest, please click here
+    <a href="https://www.investopedia.com/terms/i/interestrate.asp"></a>
+</p> 
+
+<p-accordion>
+    <p-accordionTab header="Simple Interest">
+       <div class="simple-interest">
+           <div class=" flex flex-row initial">
+               <div class="head-text">
+                   <h3>Initial Investment</h3>
+               </div>
+               <div class="input-basic">
+                   <input type="text" pInputText [(ngModel)]="value1" (ngModelChange)="initialChange($event)">
+                   
+               </div>
+           </div>
+           <div class="flex flex-row rate">
+               <div class="head-text">
+                   <h3>Interest rate</h3>
+               </div>
+               <div class="input-basic">
+                    <input type="text" pInputText [(ngModel)]="value2" (ngModelChange)="initialChange($event)"> 
+                    
+               </div>
+           </div>
+           <div class="flex flex-row year">
+                <div class="head-text">
+                    <h3>Period Year</h3>
+                </div>
+                <div class="input-basic">
+                    <input type="text" pInputText [(ngModel)]="value3" (ngModelChange)="initialChange($event)"> 
+                 
+                </div>
+            </div>
+            <div class="flex flex-row year">
+                <div class="head-text">
+                    <h3>Interest Earned</h3>
+                </div>
+                <div class="input-basic">
+                    <input type="text" pInputText [(ngModel)]="value4"> 
+                </div>
+            </div>
+            <div class="flex flex-row year">
+                <div class="head-text">
+                    <h3>Principal Amount</h3>
+                </div>
+                <div class="input-basic">
+                    <input type="text" pInputText [(ngModel)]="value5"> 
+                </div>
+            </div>
+            <div class="flex flex-row year">
+                <div class="head-text">
+                    <h3>Total Value</h3>
+                </div>
+                <div class="input-basic">
+                    <input type="text" pInputText [(ngModel)]="value6"> 
+                </div>
+            </div>
+
+
+
+            
+       </div>
+    </p-accordionTab>
+    <p-accordionTab header="Compound Interest">
+        Content 2
+    </p-accordionTab>
+   
+</p-accordion>
+
+
+
+<h3>Compound Interest</h3>
+
